@@ -1,3 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
+﻿//Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
+
+Console.WriteLine("Введите первое число"); //Вводим первое число
+int a =Convert.ToInt32 (Console.ReadLine()); // Конвертируем числов в строку
+
+Console.WriteLine("Введите второе число"); //Вводим первое число
+int b =Convert.ToInt32 (Console.ReadLine()); // Конвертируем числов в строку
+
+Console.WriteLine("Введите третье число"); //Вводим первое число
+int c =Convert.ToInt32 (Console.ReadLine()); // Конвертируем числов в строку
+
+int max = a; // Присваеваем переменной "max" значение "a"
+if (max < b) max = b; //Если значение "max" меньше значения "b" -> Присваиваем значение "b" значению "max"
+if (max < c) max = c;//Если значение "max" меньше значения "с" -> Присваиваем значение "с" значению "max"
+
+System.Console.WriteLine("Максимальное из этих чисел = " + max);
